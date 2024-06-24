@@ -78,7 +78,7 @@ export default function App() {
             <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <section className="text-center mb-16">
                     <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-                        AIと開発者の架け橋
+                        生成AIと開発者の架け橋
                     </h2>
                     <p className="text-xl text-gray-600 mb-8">
                         生成AIを活用する開発者のための究極のプロジェクト要約ツール
