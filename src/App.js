@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, CheckCircle, Users, Clock, Zap, X } from 'lucide-react';
+import { ArrowRight, CheckCircle, Users, Clock, Zap, X, Folder, FileText, Settings, RefreshCw, Target, Layers, Save } from 'lucide-react';
 
 const Feature = ({ icon: Icon, title, description }) => (
     <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md">
@@ -23,6 +23,18 @@ const ComparisonRow = ({ feature, traditional, psg }) => (
         <td className="border px-4 py-2">{traditional}</td>
         <td className="border px-4 py-2 font-semibold text-green-600">{psg}</td>
     </tr>
+);
+
+const DetailedFeature = ({ icon: Icon, title, description }) => (
+    <div className="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-md">
+        <div className="flex-shrink-0">
+            <Icon className="w-8 h-8 text-green-500" />
+        </div>
+        <div>
+            <h3 className="text-lg font-semibold mb-2">{title}</h3>
+            <p className="text-gray-600">{description}</p>
+        </div>
+    </div>
 );
 
 const InstructionPopup = ({ isOpen, onClose }) => {
@@ -83,14 +95,52 @@ export default function App() {
                     <p className="text-xl text-gray-600 mb-8">
                         生成AIを活用する開発者のための究極のプロジェクト要約ツール
                     </p>
-                    <button onClick={openPopup} className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 inline-flex items-center">
-                        今すぐ始める
+                    <img src="https://github.com/noricha-vr/ContextGenerator/raw/main/image/screenshot.png" alt="Context Generator" className="mx-auto mb-8 w-full lg:w-3/4" />
+                    <button onClick={openPopup} className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 inline-flex items-center">       今すぐ始める
                         <ArrowRight className="ml-2" />
                     </button>
                 </section>
 
+
                 <section className="mb-16">
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">主な機能</h2>
+                    <div className="grid md:grid-cols-2 gap-6">
+                        <DetailedFeature
+                            icon={Folder}
+                            title="ディレクトリ内ファイルのマークダウン出力"
+                            description="指定したディレクトリ内のすべてのファイルを自動的にマークダウン形式で出力します。プロジェクト全体を一目で把握できます。"
+                        />
+                        <DetailedFeature
+                            icon={FileText}
+                            title="柔軟なファイル選択"
+                            description="除外するディレクトリの指定や、含めるファイル拡張子のチェックボックス選択が可能。必要な情報のみを抽出できます。"
+                        />
+                        <DetailedFeature
+                            icon={Settings}
+                            title="カスタマイズ可能な出力設定"
+                            description="出力ファイル名と出力ディレクトリを自由に指定可能。プロジェクトに合わせた柔軟な設定ができます。"
+                        />
+                        <DetailedFeature
+                            icon={Target}
+                            title="ターゲットファイルの指定"
+                            description="特定の重要なファイルを指定して優先的に取得できます。プロジェクトの核心部分を確実に含められます。"
+                        />
+                        <DetailedFeature
+                            icon={Layers}
+                            title="ディレクトリ構造の可視化"
+                            description="最大4階層までのディレクトリ構造を自動表示。プロジェクトの全体像を素早く把握できます。"
+                        />
+                        <DetailedFeature
+                            icon={Save}
+                            title="プリセット機能"
+                            description="設定の保存と読み込みが可能。複数のプロジェクトを効率的に管理できます。"
+                        />
+                    </div>
+                </section>
+
+
+                <section className="mb-16">
+                    <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">特徴</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <Feature
                             icon={Zap}
@@ -114,6 +164,7 @@ export default function App() {
                         />
                     </div>
                 </section>
+
 
                 <section className="mb-16">
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">開発者の声</h2>
