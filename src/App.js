@@ -31,8 +31,7 @@ export default function App() {
             <header className="bg-white shadow-md">
                 <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
                     <h1 className="text-3xl font-bold text-gray-900">Project Summary Generator</h1>
-                    <a href="#" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">
-                        Download Now
+                    <a href="#download" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">                        Download Now
                     </a>
                 </div>
             </header>
@@ -45,8 +44,7 @@ export default function App() {
                     <p className="text-xl text-gray-600 mb-8">
                         生成AIを活用する開発者のための究極のプロジェクト要約ツール
                     </p>
-                    <a href="#" className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 inline-flex items-center">
-                        始めましょう
+                    <a href="#download" className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 inline-flex items-center">                        始めましょう
                         <ArrowRight className="ml-2" />
                     </a>
                 </section>
