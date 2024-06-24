@@ -42,16 +42,16 @@ const InstructionPopup = ({ isOpen, onClose }) => {
                     <pre className="bg-gray-100 p-3 rounded">
                         {`
 # リポジトリをクローン
-git clone https://github.com/noricha-vr/ProjectSummaryGenerator.git
+git clone https://github.com/noricha-vr/ContextGenerator.git
 
 # プロジェクトディレクトリに移動
-cd ProjectSummaryGenerator
+cd ContextGenerator
 
 # アプリケーションを起動
 python gui.py
                         `.trim()}
                     </pre>
-                    <p>これらのコマンドを実行すると、Project Summary Generatorが起動します。</p>
+                    <p>これらのコマンドを実行すると、Context Generatorが起動します。</p>
                 </div>
             </div>
         </div>
