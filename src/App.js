@@ -170,15 +170,26 @@ export default function App() {
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">開発者の声</h2>
                     <div className="grid md:grid-cols-2 gap-8">
                         <Testimonial
-                            quote="Context Generatorのおかげで、AIとのコミュニケーションが劇的に改善しました。プロジェクトの説明時間が1/5になり、より本質的な開発作業に集中できています。"
-                            author="Taro"
-                            role="Senior Developer"
+                            quote="最初は手作業でコードの説明をChatGPTに投げていて、毎回20分くらいかかってました。Context Generatorを使い始めてからは、ワンクリックでプロジェクトの全体像を共有できるようになって、本当に助かってます！"
+                            author="田中 優作"
+                            role="フロントエンドエンジニア @ Tech Corp"
                         />
                         <Testimonial
-                            quote="複数のプロジェクトを並行して進めていますが、このツールのおかげで各プロジェクトの切り替えがスムーズになりました。AIとの対話の質も向上し、開発速度が約2倍になった感覚です。"
-                            author="Hanako"
-                            role="Full-stack Engineer"
+                            quote="ChatGPTやClaudeだとコンテキストの制限で困ってたんですが、Geminiなら Context Generator でプロジェクト全体を一気に読み込ませられるようになって革命的でした。プロジェクト全体を見渡した質問ができるので、設計の一貫性とかアーキテクチャの改善提案がより的確になりましたね。"
+                            author="山田 翔太"
+                            role="テックリード @ Future Systems"
                         />
+                        <Testimonial
+                            quote="ChatGPTとペアプロしながら開発してるんですが、このツールのおかげでコンテキストの共有がスムーズになりました。特に新機能の追加時に、既存コードの説明が楽になって助かります。チームメンバーにも広めてます！"
+                            author="鈴木 美咲"
+                            role="フルスタックエンジニア @ StartupX"
+                        />
+                        <Testimonial
+                            quote="ChatGPT o1 Pro使って開発してるのですが、毎回プロジェクトの説明するのが面倒で。これ使うようになってから、AIとの会話の質が段違いです。特にレガシーコードの解析とリファクタリングの提案がより的確になりました。"
+                            author="佐藤 健一"
+                            role="シニアエンジニア @ Innovation Lab"
+                        />
+                        
                     </div>
                 </section>
 
